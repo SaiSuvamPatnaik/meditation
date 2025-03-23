@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "664542943173",
+    "project_id": "meditation-ba7ee",
+    "storage_bucket": "meditation-ba7ee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664542943173:android:f78debe5b6e9d9e3c8ddac",
+        "android_client_info": {
+          "package_name": "com.example.meditation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDfQu0mmtAEi-WrL8fG0UoRmT9Hdg-ksY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
