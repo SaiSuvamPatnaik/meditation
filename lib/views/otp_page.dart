@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pinput/pinput.dart';
 import '../views/home_page.dart';
+import 'quiz_screen.dart';
 
 class OTPPage extends StatefulWidget {
   final String phoneNumber;
@@ -76,11 +77,11 @@ class _OTPPageState extends State<OTPPage> {
     }
   }
 
-  /// 📌 Navigate to Home Page After Successful Login
+  /// 📌 Navigate to Quiz Page After Successful Login
   _navigateToHome() {
     Navigator.pushAndRemoveUntil(
       context,
-      MaterialPageRoute(builder: (context) => const HomePage()),
+      MaterialPageRoute(builder: (context) => const QuizScreen()),
           (route) => false,
     );
   }

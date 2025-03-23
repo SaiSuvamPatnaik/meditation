@@ -38,6 +38,12 @@ dependencies:
   lottie: ^1.2.0
   intl: ^0.18.0
   table_calendar: ^3.0.9
+  video_player: ^2.9.3
+  just_audio: ^0.9.35
+  rxdart: ^0.27.7
+  audio_session: ^0.1.10
+  share_plus: ^7.2.1
+
 
 
 dev_dependencies:
@@ -53,3 +59,6 @@ flutter:
     - assets/images/meditation.png
     - assets/animation/meditation_lottie.json
     - assets/animation/success.json
+    - assets/videos/meditation_video.mp4
+    - assets/images/meditation.jpg
+    - assets/audio/meditation.mp3

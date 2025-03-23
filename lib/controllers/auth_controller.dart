@@ -5,6 +5,8 @@ import '../services/storage_service.dart';
 import '../views/home_page.dart';
 import '../views/otp_page.dart';
 import '../views/login_page.dart';
+import '../views/quiz_screen.dart';
+
 
 class AuthController {
   static final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -95,8 +97,8 @@ class AuthController {
   static void _navigateToHome(BuildContext context) {
     Navigator.pushAndRemoveUntil(
       context,
-      MaterialPageRoute(builder: (context) => const HomePage()),
-          (route) => false,
+      MaterialPageRoute(builder: (context) => const QuizScreen()),
+      (route) => false,
     );
   }
 }

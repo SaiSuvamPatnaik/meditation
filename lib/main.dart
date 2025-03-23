@@ -1,36 +1,3 @@
-//
-//
-// import 'package:firebase_core/firebase_core.dart';
-// import 'package:flutter/material.dart';
-// import 'package:meditation/views/home_page.dart';
-// import 'package:meditation/views/login_page.dart';
-// import 'package:meditation/services/storage_service.dart';
-//
-// void main() async {
-//   WidgetsFlutterBinding.ensureInitialized();
-//   await Firebase.initializeApp(); // ✅ Initialize Firebase
-//   bool isLoggedIn = await StorageService.getLoginStatus();
-//
-//   runApp(MyApp(isLoggedIn: isLoggedIn));
-// }
-//
-// class MyApp extends StatelessWidget {
-//   final bool isLoggedIn;
-//   const MyApp({Key? key, required this.isLoggedIn}) : super(key: key);
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       home: isLoggedIn ? const HomePage() : const LoginPage(),
-//     );
-//   }
-// }
-//
-//
-
-
-
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:meditation/views/home_page.dart';
@@ -77,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // Delay splash screen for 8 seconds
-    Future.delayed(Duration(seconds: 15), () {
+    Future.delayed(Duration(seconds: 2), () {
       // Navigate to HomePage or LoginPage based on login status
       Navigator.pushReplacement(
         context,
