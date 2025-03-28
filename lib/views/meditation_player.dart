@@ -77,19 +77,19 @@ class _MeditationPlayerScreenState extends State<MeditationPlayerScreen> {
       appBar: AppBar(
         backgroundColor: const Color(0xFFF7F0E6),
         elevation: 0,
-        iconTheme: const IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: const Color(0xFFda461b)),
         title: Text(
           widget.title,
           style: GoogleFonts.poppins(
             fontSize: 20,
             fontWeight: FontWeight.bold,
-            color: Colors.black,
+            color: const Color(0xFFda461b),
           ),
         ),
         centerTitle: true,
         actions: [
           IconButton(
-            icon: const Icon(Icons.share, color: Colors.black),
+            icon: const Icon(Icons.share, color: const Color(0xFFda461b)),
             onPressed: _shareAudio,
           ),
         ],
@@ -120,7 +120,7 @@ class _MeditationPlayerScreenState extends State<MeditationPlayerScreen> {
               style: GoogleFonts.poppins(
                 fontSize: 24,
                 fontWeight: FontWeight.w600,
-                color: Colors.black,
+                color: const Color(0xFFda461b),
               ),
               textAlign: TextAlign.center,
             ),

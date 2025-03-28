@@ -17,11 +17,11 @@ class WisdomScreen extends StatelessWidget {
           style: GoogleFonts.poppins(
             fontSize: 22,
             fontWeight: FontWeight.bold,
-            color: Colors.black,
+            color: const Color(0xFFda461b),
           ),
         ),
         centerTitle: true,
-        iconTheme: const IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: const Color(0xFFda461b)),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -64,8 +64,8 @@ class WisdomScreen extends StatelessWidget {
       "$greeting 🌞",
       style: GoogleFonts.poppins(
         fontSize: 20,
-        fontWeight: FontWeight.w600,
-        color: Colors.black,
+        fontWeight: FontWeight.bold,
+        color: const Color(0xFFda461b),
       ),
     );
   }

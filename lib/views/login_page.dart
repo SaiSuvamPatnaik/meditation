@@ -30,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(height: 15),
               _buildGoogleLoginButton(context),
               const SizedBox(height: 20),
-              _buildFooter(), // ✅ Added back missing method
+              _buildFooter(), //
             ],
           ),
         ),
@@ -45,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
         const Icon(Icons.lock_outline, size: 100, color: Color(0xFF203A43)),
         const SizedBox(height: 10),
         Text("Welcome Back",
-            style: GoogleFonts.poppins(fontSize: 24, fontWeight: FontWeight.w600, color: const Color(0xFF203A43))),
+            style: GoogleFonts.poppins(fontSize: 24, fontWeight: FontWeight.w600, color: const Color(0xFFDC4108))),
       ],
     );
   }
@@ -65,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
 
   /// 📌 **Submit Button for Phone Login**
   Widget _buildSubmitButton(BuildContext context) {
-    return ElevatedButton(
+    return ElevatedButton.icon(
       onPressed: () {
         if (_phoneController.text.isNotEmpty) {
           AuthController.loginWithPhone(context, _phoneController.text);
@@ -75,16 +75,20 @@ class _LoginPageState extends State<LoginPage> {
           );
         }
       },
+      icon: const Icon(Icons.phone, color: Colors.white),  // Icon for the phone
+      label: Text(
+        "Login with Phone",
+        style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w500, color: Colors.white),
+      ),
       style: ElevatedButton.styleFrom(
         backgroundColor: const Color(0xFF203A43),
         padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 24),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
         elevation: 5,
       ),
-      child: Text("Login with Phone",
-          style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w500, color: Colors.white)),
     );
   }
+
 
   /// 📌 **Google Login Button**
   Widget _buildGoogleLoginButton(BuildContext context) {
@@ -94,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
       label: Text("Login with Google",
           style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w500, color: Colors.white)),
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.redAccent,
+        backgroundColor: const Color(0xFF203A43),
         padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 24),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
         elevation: 5,
